@@ -1,0 +1,25 @@
+{
+	"name": "trigger2",
+	"properties": {
+		"description": "schedule trigger",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline8",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2026-04-09T09:00:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

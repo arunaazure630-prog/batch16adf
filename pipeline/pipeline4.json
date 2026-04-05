@@ -1,0 +1,100 @@
+{
+	"name": "pipeline4",
+	"properties": {
+		"activities": [
+			{
+				"name": "Switch1",
+				"type": "Switch",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"on": {
+						"value": "@variables('Monday')",
+						"type": "Expression"
+					},
+					"cases": [
+						{
+							"value": "sunady",
+							"activities": [
+								{
+									"name": "sunday_Wait1",
+									"type": "Wait",
+									"dependsOn": [],
+									"userProperties": [],
+									"typeProperties": {
+										"waitTimeInSeconds": {
+											"value": "@pipeline().parameters.v1",
+											"type": "Expression"
+										}
+									}
+								}
+							]
+						},
+						{
+							"value": "monday",
+							"activities": [
+								{
+									"name": "monday_Wait1",
+									"type": "Wait",
+									"dependsOn": [],
+									"userProperties": [],
+									"typeProperties": {
+										"waitTimeInSeconds": {
+											"value": "@pipeline().parameters.v1",
+											"type": "Expression"
+										}
+									}
+								}
+							]
+						},
+						{
+							"value": "tuesday",
+							"activities": [
+								{
+									"name": "tuesday_Wait1",
+									"type": "Wait",
+									"dependsOn": [],
+									"userProperties": [],
+									"typeProperties": {
+										"waitTimeInSeconds": {
+											"value": "@pipeline().parameters.v1",
+											"type": "Expression"
+										}
+									}
+								}
+							]
+						}
+					],
+					"defaultActivities": [
+						{
+							"name": "default_Wait",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": {
+									"value": "@pipeline().parameters.v1",
+									"type": "Expression"
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"v1": {
+				"type": "int",
+				"defaultValue": 3
+			}
+		},
+		"variables": {
+			"Monday": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-03-31T08:22:55Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

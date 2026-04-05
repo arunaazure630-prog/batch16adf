@@ -1,0 +1,20 @@
+{
+	"name": "MetadataDrivenCopyTask_l8z_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_01",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_l8z_20260403"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "BATCH16SC",
+			"table": "MainControlTable_l8z"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

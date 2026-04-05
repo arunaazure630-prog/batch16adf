@@ -1,0 +1,17 @@
+{
+	"name": "Batch16adf124",
+	"properties": {
+		"globalParameters": {
+			"wait_time": {
+				"type": "int",
+				"value": 5
+			}
+		}
+	},
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "492666f3-2340-4e60-b01d-2b875c9fa3be",
+		"tenantId": "335ffcec-0913-4786-9d89-416d7fd65571"
+	}
+}

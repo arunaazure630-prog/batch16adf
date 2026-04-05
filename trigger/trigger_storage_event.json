@@ -1,0 +1,24 @@
+{
+	"name": "trigger_storage_event",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline10",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/batch16con1/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/42bee1f7-896d-4fd6-835a-1b9f4688d0a3/resourceGroups/rg1/providers/Microsoft.Storage/storageAccounts/gen2storageacc11",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"name": "st_sql_05",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SALE_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CATEGORY",
+				"type": "varchar"
+			},
+			{
+				"name": "PRODUCT_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "SALE_AMOUNT",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "BATCH16SC",
+			"table": "SALES"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

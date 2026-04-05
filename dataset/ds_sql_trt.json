@@ -1,0 +1,17 @@
+{
+	"name": "ds_sql_trt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "BATCH16SC",
+			"table": "Table_B"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
