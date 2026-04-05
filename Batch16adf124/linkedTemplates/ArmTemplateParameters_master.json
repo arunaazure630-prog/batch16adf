@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Batch16adf124"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"ls_01_accountKey": {
+			"value": ""
+		},
+		"ls_sql_01_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://batch16blob.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://gen2storageacc11.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0405-145522-406miraa"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "batch16sqlserver1.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "batch16db"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "arunaadim"
+		},
+		"ls_01_properties_typeProperties_url": {
+			"value": "https://gen2storageacc11.dfs.core.windows.net/"
+		},
+		"ls_sql_01_properties_typeProperties_server": {
+			"value": "batch16sqlserver1.database.windows.net"
+		},
+		"ls_sql_01_properties_typeProperties_database": {
+			"value": "batch16db"
+		},
+		"ls_sql_01_properties_typeProperties_userName": {
+			"value": "arunaadmin"
+		},
+		"trigger_storage_event_properties_typeProperties_scope": {
+			"value": "/subscriptions/42bee1f7-896d-4fd6-835a-1b9f4688d0a3/resourceGroups/rg1/providers/Microsoft.Storage/storageAccounts/gen2storageacc11"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
